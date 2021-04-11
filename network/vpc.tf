@@ -1,8 +1,6 @@
 resource "aws_vpc" "iti" {
-  cidr_block       = var.cidr
-  instance_tenancy = "default"
-
+  cidr_block = var.vpc_cider
   tags = {
-    Name = var.name
+      name = "iti"
   }
 }

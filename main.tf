@@ -1,11 +1,12 @@
-module "iti" {
-    source = "./network"
-    cidr = var.cidr
-    name = var.name
-    public1_subnet_cidr = var.public1_subnet_cidr
-    public2_subnet_cidr = var.public2_subnet_cidr 
-    private1_subnet_cidr = var.private1_subnet_cidr
-    private2_subnet_cidr = var.private2_subnet_cidr
-    az1 = var.az1
-    az2 = var.az2
+module "network" {
+  source = "./network"
+    public1_cider  = var.public1_cider
+    public2_cider  = var.public2_cider
+    private1_cider = var.private1_cider
+    private2_cider = var.private2_cider
+    subnet_public1_AZ  = var.subnet_public1_AZ
+    subnet_public2_AZ  = var.subnet_public2_AZ
+    subnet_private1_AZ = var.subnet_private1_AZ
+    subnet_private2_AZ = var.subnet_private2_AZ
+    vpc_cider          = var.vpc_cider
 }
